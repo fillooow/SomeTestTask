@@ -17,6 +17,8 @@ fun test(lib: Library) {
     assertTrue(lib.addNewBook(Book("1", "1", "Lex")))
     assertTrue(!lib.addNewBook(Book("1", "any name because we check id only", "any author")))
     assertTrue(lib.deleteBook("1"))
+
+
     assertTrue(lib.addNewBook(Book("3", "Some Book3", "Some Author2")))
     assertTrue(lib.addNewBook(Book("4", "Some Book1", "Some Author3")))
     assertTrue(lib.addNewBook(Book("2", "Some Book2", "Some Author2")))
