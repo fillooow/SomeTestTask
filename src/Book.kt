@@ -9,6 +9,7 @@ class Book(val id: String, val name: String, val author: String) {
 
         if (other !is Book) return false
 
+        /** Use [id] as unique identifier at HashSet */
         return this.id == other.id
     }
 }

@@ -51,6 +51,8 @@ fun test(lib: Library) {
     assertTrue(byAuthor[1] == "Some Book2" || byAuthor[1] == "Some Book3")
     assertTrue(byAuthor[2] == "Some Book2" || byAuthor[2] == "Some Book3")
     assertTrue(byAuthor[3] == "Some Book1")
+
+    println("All tests complete")
 }
 
 fun assertTrue(condition: Boolean) {
