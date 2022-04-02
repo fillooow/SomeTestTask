@@ -15,7 +15,8 @@ interface Library {
 
     /**
     @return 10 book names containing the specified string.
-    If there are several books with the same name, author's name is added to book's name in the format "<author> - <book>",
+    If there are several books with the same name, author's name is added
+    to book's name in the format "<author> - <book>",
     otherwise returns simply "<book>".
      */
     fun listBooksByName(searchString: String): Collection<String>
